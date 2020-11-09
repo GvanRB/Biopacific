@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="ivan.ramos.biopacificv2.InicioFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/mascotasFragment"
+        android:name="ivan.ramos.biopacificv2.MascotasFragment"
+        android:label="@string/title_mascotas"
+        tools:layout="@layout/fragment_mascotas" />
+    <fragment
+        android:id="@+id/addMascotasFragment"
+        android:name="ivan.ramos.biopacificv2.AddMascotasFragment"
+        android:label="@string/title_addmascota"
+        tools:layout="@layout/fragment_add_mascotas" />
+    <fragment
+        android:id="@+id/serviciosFragment"
+        android:name="ivan.ramos.biopacificv2.ServiciosFragment"
+        android:label="@string/title_servicios"
+        tools:layout="@layout/fragment_servicios"/>
+</navigation>
