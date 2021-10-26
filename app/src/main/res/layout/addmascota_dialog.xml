@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@drawable/savemascota"
+            app:layout_constraintEnd_toStartOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/regimascota"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView26"
+            app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@drawable/raza"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout6"
+            app:layout_constraintStart_toStartOf="@+id/imageView26"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout6"
+            app:tint="?attr/colorControlNormal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView22"
+            app:layout_constraintTop_toBottomOf="@+id/imageView26">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtnameMas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de la mascota" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@drawable/especie2"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerEspecie"
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/spinnerEspecie"
+            app:tint="?attr/colorControlNormal" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerEspecie"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/style_combobox"
+
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout6"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+        </com.toptoche.searchablespinnerlibrary.SearchableSpinner>>
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerRaza"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/style_combobox"
+
+            app:layout_constraintEnd_toEndOf="@+id/spinnerEspecie"
+            app:layout_constraintStart_toStartOf="@+id/spinnerEspecie"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerEspecie"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerRaza"
+            app:layout_constraintStart_toStartOf="@+id/spinnerRaza"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRaza">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sexo" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputEdad"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+            app:layout_constraintStart_toStartOf="@id/textInputLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Edad(años)"
+                android:maxLength="2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@drawable/ic_hourglass"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputEdad"
+            app:layout_constraintStart_toStartOf="@+id/imageView19"
+            app:layout_constraintTop_toTopOf="@+id/textInputEdad"
+            app:tint="?attr/colorControlNormal"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPropi"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputEdad"
+            app:layout_constraintStart_toStartOf="@id/textInputEdad"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEdad">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Propietario" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@drawable/ic_pets"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toTopOf="@+id/spinnerRaza"
+            app:tint="?attr/colorControlNormal" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@drawable/sexo"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout4"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout4"
+            app:tint="?attr/colorControlNormal" />
+
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_border"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@android:drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="@id/textTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textTitle"
+            app:tint="@color/white" />
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/Biopacific"
+            android:src="@drawable/ic_person_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputPropi"
+            app:layout_constraintStart_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toTopOf="@+id/textInputPropi"/>
+
+        <TextView
+            android:id="@+id/txtEspecie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/txtRaza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Cancelar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutMasc"
+        app:layout_constraintEnd_toStartOf="@+id/registrarpets"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMasc" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registrarpets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Registrar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutMasc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/cancelar"
+        app:layout_constraintTop_toBottomOf="@+id/layoutMasc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

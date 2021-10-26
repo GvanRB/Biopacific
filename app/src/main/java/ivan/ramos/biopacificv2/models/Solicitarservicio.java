@@ -5,43 +5,17 @@ import com.google.gson.annotations.SerializedName;
 
 public class Solicitarservicio {
 
-    @SerializedName("idPerfil")
-    @Expose
     private String idPerfil;
-    @SerializedName("idCliente")
-    @Expose
-    private String idCliente;
-    @SerializedName("idMascota")
-    @Expose
+    private String idMedico;
     private String idMascota;
-    @SerializedName("costoServicio")
-    @Expose
-    private Integer costoServicio;
-    @SerializedName("fechaRegistro")
-    @Expose
     private String fechaRegistro;
 
-    /**
-     * No args constructor for use in serialization
-     *
-     */
-    public Solicitarservicio() {
-    }
+    public Solicitarservicio(){}
 
-    /**
-     *
-     * @param idCliente
-     * @param idPerfil
-     * @param fechaRegistro
-     * @param costoServicio
-     * @param idMascota
-     */
-    public Solicitarservicio(String idPerfil, String idCliente, String idMascota, Integer costoServicio, String fechaRegistro) {
-        super();
+    public Solicitarservicio(String idPerfil, String idMedico, String idMascota, String fechaRegistro) {
         this.idPerfil = idPerfil;
-        this.idCliente = idCliente;
+        this.idMedico = idMedico;
         this.idMascota = idMascota;
-        this.costoServicio = costoServicio;
         this.fechaRegistro = fechaRegistro;
     }
 
@@ -53,12 +27,12 @@ public class Solicitarservicio {
         this.idPerfil = idPerfil;
     }
 
-    public String getIdCliente() {
-        return idCliente;
+    public String getIdMedico() {
+        return idMedico;
     }
 
-    public void setIdCliente(String idCliente) {
-        this.idCliente = idCliente;
+    public void setIdMedico(String idMedico) {
+        this.idMedico = idMedico;
     }
 
     public String getIdMascota() {
@@ -69,14 +43,6 @@ public class Solicitarservicio {
         this.idMascota = idMascota;
     }
 
-    public Integer getCostoServicio() {
-        return costoServicio;
-    }
-
-    public void setCostoServicio(Integer costoServicio) {
-        this.costoServicio = costoServicio;
-    }
-
     public String getFechaRegistro() {
         return fechaRegistro;
     }
@@ -84,5 +50,4 @@ public class Solicitarservicio {
     public void setFechaRegistro(String fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
-
 }

@@ -11,19 +11,19 @@ public class Usuarios {
     @SerializedName("nombreUsuario")
     @Expose
     private String nombreUsuario;
-    @SerializedName("contraseña")
+    @SerializedName("contrasena")
     @Expose
-    private String contraseña;
+    private String contrasena;
 
     public Usuarios(){
 
     }
 
-    public Usuarios(String idUsuario, String nombreUsuario, String contraseña) {
+    public Usuarios(String idUsuario, String nombreUsuario, String contrasena) {
         super();
         this.idUsuario = idUsuario;
         this.nombreUsuario = nombreUsuario;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
     }
 
     public String getIdUsuario() {
@@ -42,11 +42,11 @@ public class Usuarios {
         this.nombreUsuario = nombreUsuario;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 }

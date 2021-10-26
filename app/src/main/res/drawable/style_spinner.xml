@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="8dp"></corners>
+                    <padding android:right="10dp"></padding>
+                    <stroke
+                        android:width="2dp"
+                        android:color="?attr/colorControlActivated"
+                        />
+                </shape>
+
+            </item>
+            <item>
+                <bitmap android:gravity="center|end"
+                    android:src="@android:drawable/ic_menu_more"
+                    android:tint="?attr/colorControlActivated"></bitmap>
+            </item>
+        </layer-list>
+    </item>
+</selector>

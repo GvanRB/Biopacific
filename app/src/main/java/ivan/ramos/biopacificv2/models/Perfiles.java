@@ -37,7 +37,7 @@ public class Perfiles {
 
     @Override
     public String toString() {
-        return nombre ;
+        return nombre+" -  S/."+costo+".00";
     }
 
     public String getIdPerfil() {

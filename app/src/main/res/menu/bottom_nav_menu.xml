@@ -8,16 +8,12 @@
 
     <item
         android:id="@+id/mascotasFragment"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_pets"
         android:title="@string/title_mascotas" />
 
     <item
-        android:id="@+id/addMascotasFragment"
-        android:icon="@drawable/ic_addmascotas_black_24dp"
-        android:title="@string/title_addmascota" />
-    <item
-        android:id="@+id/serviciosFragment"
-        android:icon="@drawable/ic_servicios_24dp"
-        android:title="@string/title_servicios" />
+        android:id="@+id/medicosFragment"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_medicos" />
 
 </menu>

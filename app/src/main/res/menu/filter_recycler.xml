@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/filterRecycler"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item>
+    <item android:title="Servicios"
+        android:id="@+id/verServicios"
+        app:showAsAction="never"/>
+    <item android:title="Ver perfil"
+        android:id="@+id/verPerfil"
+        app:showAsAction="never"/>
+    <item android:title="Salir"
+        android:id="@+id/CerrarSession"
+        app:showAsAction="never"/>
+
+</menu>

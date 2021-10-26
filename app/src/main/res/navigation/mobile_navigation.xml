@@ -5,23 +5,44 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/inicioFragment">
     <fragment
-        android:id="@+id/inicioFragment"
-        android:name="ivan.ramos.biopacificv2.InicioFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
         android:id="@+id/mascotasFragment"
-        android:name="ivan.ramos.biopacificv2.MascotasFragment"
+        android:name="ivan.ramos.biopacificv2.fragments.MascotasFragment"
         android:label="@string/title_mascotas"
-        tools:layout="@layout/fragment_mascotas" />
+        tools:layout="@layout/fragment_mascotas" >
+        <action
+            android:id="@+id/action_mascotasFragment_to_serviciosPorMasc"
+            app:destination="@id/serviciosPorMasc"
+            app:enterAnim="@anim/slide_right_to_left_in"
+            app:exitAnim="@anim/slide_right_to_left_out"
+            app:popEnterAnim="@anim/slide_left_to_right_in"
+            app:popExitAnim="@anim/slide_left_to_right_out" />
+    </fragment>
     <fragment
-        android:id="@+id/addMascotasFragment"
-        android:name="ivan.ramos.biopacificv2.AddMascotasFragment"
-        android:label="@string/title_addmascota"
-        tools:layout="@layout/fragment_add_mascotas" />
+        android:id="@+id/medicosFragment"
+        android:name="ivan.ramos.biopacificv2.fragments.MedicosFragment"
+        android:label="@string/title_medicos"
+        tools:layout="@layout/fragment_medicos" >
+        <action
+            android:id="@+id/action_medicosFragment_to_serviciosPorMedic"
+            app:destination="@id/serviciosPorMedic"
+            app:enterAnim="@anim/slide_right_to_left_in"
+            app:exitAnim="@anim/slide_right_to_left_out"
+            app:popEnterAnim="@anim/slide_left_to_right_in"
+            app:popExitAnim="@anim/slide_left_to_right_out" />
+    </fragment>
+    <activity
+        android:id="@+id/serviciosPorMasc"
+        android:name="ivan.ramos.biopacificv2.activitys.ServiciosPorMasc"
+        android:label="activity_serviciopormasc"
+        tools:layout="@layout/activity_serviciopormasc" />
+    <activity
+        android:id="@+id/serviciosPorMedic"
+        android:name="ivan.ramos.biopacificv2.activitys.ServiciosPorMedic"
+        android:label="activity_serviciospormedic"
+        tools:layout="@layout/activity_serviciospormedic" />
     <fragment
-        android:id="@+id/serviciosFragment"
-        android:name="ivan.ramos.biopacificv2.ServiciosFragment"
-        android:label="@string/title_servicios"
-        tools:layout="@layout/fragment_servicios"/>
+        android:id="@+id/inicioFragment"
+        android:name="ivan.ramos.biopacificv2.fragments.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
 </navigation>

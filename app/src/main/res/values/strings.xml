@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BiopacificV2</string>
+    <string name="app_name">BioPacific</string>
     <string name="title_home">Home</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -8,4 +8,9 @@
     <string name="title_servicios">Servicios</string>
     <string name="regimascota">Registra a la mascota para solicitar servicios de analisis clinico y llevar un control del paciente</string>
     <string name="precio">Precio: S/.</string>
+    <string name="back">Back</string>
+    <string name="Biopacific">BioPacific</string>
+    <string name="viewpagers">VIEWPAGER2</string>
+    <string name="Bioinfo">InfoBio</string>
+    <string name="title_medicos">Medicos</string>
 </resources>

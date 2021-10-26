@@ -13,13 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BiopacificV2"
         android:usesCleartextTraffic="true">
-        <activity android:name=".prueba"></activity>
-        <activity android:name=".Registro" />
-        <activity android:name=".Login" />
+        <activity android:name=".activitys.PdfViewResult" />
+        <activity android:name=".activitys.PdfTarifario" />
+        <activity android:name=".activitys.PdfViewFact" />
+        <activity android:name=".activitys.ServiciosPorMedic" />
+        <activity android:name=".activitys.ViewPager2" />
+        <activity android:name=".activitys.Registro" />
+        <activity android:name=".activitys.Login" />
+        <activity android:name=".activitys.ServiciosPorMasc" />
         <activity android:name=".MainActivity" />
-        <activity
-            android:name=".Inicio"
-            android:label="@string/app_name">
+        <activity android:name=".activitys.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

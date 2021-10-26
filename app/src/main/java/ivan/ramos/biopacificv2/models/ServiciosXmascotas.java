@@ -5,76 +5,89 @@ import com.google.gson.annotations.SerializedName;
 
 public class ServiciosXmascotas {
 
-    @SerializedName("nombre")
-    @Expose
-    private String nombre;
-    @SerializedName("costo")
-    @Expose
-    private Integer costo;
-    @SerializedName("estado")
-    @Expose
-    private String estado;
-    @SerializedName("fechaRegistro")
-    @Expose
-    private String fechaRegistro;
-    @SerializedName("nombreMascota")
-    @Expose
+    private String idOrden;
+    private Integer estadoOrden;
+    private String fechaRegistroOrden;
+    private String nombreMedico;
+    private String apellidoMedico;
+    private String dniMedico;
     private String nombreMascota;
+    private String generoMascota;
+    private Integer edadMascota;
+    private String nombrePropietario;
+    private String nombrePerfil;
+    private Integer costoPerfil;
+    private Integer totalfactura;
+    private String numeroFactura;
 
-    /**
-     * No args constructor for use in serialization
-     *
-     */
     public ServiciosXmascotas() {
     }
 
-    /**
-     *
-     * @param estado
-     * @param costo
-     * @param nombreMascota
-     * @param fechaRegistro
-     * @param nombre
-     */
-    public ServiciosXmascotas(String nombre, Integer costo, String estado, String fechaRegistro, String nombreMascota) {
-        super();
-        this.nombre = nombre;
-        this.costo = costo;
-        this.estado = estado;
-        this.fechaRegistro = fechaRegistro;
+    public ServiciosXmascotas(String idOrden, Integer estadoOrden, String fechaRegistroOrden, String nombreMedico, String apellidoMedico,
+                              String dniMedico, String nombreMascota, String generoMascota, Integer edadMascota, String nombrePropietario,
+                              String nombrePerfil, Integer costoPerfil, Integer totalfactura, String numeroFactura) {
+        this.idOrden = idOrden;
+        this.estadoOrden = estadoOrden;
+        this.fechaRegistroOrden = fechaRegistroOrden;
+        this.nombreMedico = nombreMedico;
+        this.apellidoMedico = apellidoMedico;
+        this.dniMedico = dniMedico;
         this.nombreMascota = nombreMascota;
+        this.generoMascota = generoMascota;
+        this.edadMascota = edadMascota;
+        this.nombrePropietario = nombrePropietario;
+        this.nombrePerfil = nombrePerfil;
+        this.costoPerfil = costoPerfil;
+        this.totalfactura = totalfactura;
+        this.numeroFactura = numeroFactura;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getIdOrden() {
+        return idOrden;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setIdOrden(String idOrden) {
+        this.idOrden = idOrden;
     }
 
-    public Integer getCosto() {
-        return costo;
+    public Integer getEstadoOrden() {
+        return estadoOrden;
     }
 
-    public void setCosto(Integer costo) {
-        this.costo = costo;
+    public void setEstadoOrden(Integer estadoOrden) {
+        this.estadoOrden = estadoOrden;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getFechaRegistroOrden() {
+        return fechaRegistroOrden;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setFechaRegistroOrden(String fechaRegistroOrden) {
+        this.fechaRegistroOrden = fechaRegistroOrden;
     }
 
-    public String getFechaRegistro() {
-        return fechaRegistro;
+    public String getNombreMedico() {
+        return nombreMedico;
     }
 
-    public void setFechaRegistro(String fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
+    public void setNombreMedico(String nombreMedico) {
+        this.nombreMedico = nombreMedico;
+    }
+
+    public String getApellidoMedico() {
+        return apellidoMedico;
+    }
+
+    public void setApellidoMedico(String apellidoMedico) {
+        this.apellidoMedico = apellidoMedico;
+    }
+
+    public String getDniMedico() {
+        return dniMedico;
+    }
+
+    public void setDniMedico(String dniMedico) {
+        this.dniMedico = dniMedico;
     }
 
     public String getNombreMascota() {
@@ -85,4 +98,59 @@ public class ServiciosXmascotas {
         this.nombreMascota = nombreMascota;
     }
 
+    public String getGeneroMascota() {
+        return generoMascota;
+    }
+
+    public void setGeneroMascota(String generoMascota) {
+        this.generoMascota = generoMascota;
+    }
+
+    public Integer getEdadMascota() {
+        return edadMascota;
+    }
+
+    public void setEdadMascota(Integer edadMascota) {
+        this.edadMascota = edadMascota;
+    }
+
+    public String getNombrePropietario() {
+        return nombrePropietario;
+    }
+
+    public void setNombrePropietario(String nombrePropietario) {
+        this.nombrePropietario = nombrePropietario;
+    }
+
+    public String getNombrePerfil() {
+        return nombrePerfil;
+    }
+
+    public void setNombrePerfil(String nombrePerfil) {
+        this.nombrePerfil = nombrePerfil;
+    }
+
+    public Integer getCostoPerfil() {
+        return costoPerfil;
+    }
+
+    public void setCostoPerfil(Integer costoPerfil) {
+        this.costoPerfil = costoPerfil;
+    }
+
+    public Integer getTotalfactura() {
+        return totalfactura;
+    }
+
+    public void setTotalfactura(Integer totalfactura) {
+        this.totalfactura = totalfactura;
+    }
+
+    public String getNumeroFactura() {
+        return numeroFactura;
+    }
+
+    public void setNumeroFactura(String numeroFactura) {
+        this.numeroFactura = numeroFactura;
+    }
 }
