@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/cardview_background_canino.xml" value="0.31527777777777777" />
         <entry key="app/src/main/res/layout-land/activity_login.xml" value="0.38842592592592595" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_registro.xml" value="0.22" />
         <entry key="app/src/main/res/layout/addmascota_dialog.xml" value="0.30092592592592593" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.11851851851851852" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11851851851851852" />

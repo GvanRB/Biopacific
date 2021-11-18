@@ -79,6 +79,7 @@ public class   Registro extends AppCompatActivity implements View.OnClickListene
                 startActivity(irLogins);
                 break;
             case R.id.btnRegis:
+               // Toast.makeText(this, ""+txtCorreo.getText().toString(),Toast.LENGTH_LONG).show();
                 ValidarCampos();
                 break;
             default:
@@ -89,20 +90,12 @@ public class   Registro extends AppCompatActivity implements View.OnClickListene
     }
 
     private void ValidarCorreo(final String correo) {
-
-        /*Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.14:8091/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        Services services =  retrofit.create(Services.class);*/
         Call<Boolean> call = services.getValidarCorreo(correo);
         call.enqueue(new Callback<Boolean>() {
             @Override
-
             public void onResponse(Call<Boolean> call, Response<Boolean> response) {
                 if(response.isSuccessful()){
                     if(response.body()){
-
                         Toast.makeText(Registro.this, "Correo electronico existente", Toast.LENGTH_SHORT).show();
                     }else
                     {
@@ -121,13 +114,14 @@ public class   Registro extends AppCompatActivity implements View.OnClickListene
         return pattern.matcher(email).matches();
     }
     public void ValidarCampos() {
-        if(!validarEmail(txtCorreo.toString())){
-            txtCorreo.setError("Inserte un Email");
-            //Toast.makeText(this, "Inserta un Email", Toast.LENGTH_SHORT).show();
-        }
         if (txtNomVet.getText().toString().equals("") || txtRuc.getText().toString().equals("") ||txtDirecc.getText().toString().equals("") || txtTelf.getText().toString().equals("") || txtRazonSocial.getText().toString().equals("")
                 || txtDistri.getText().toString().equals("") || txtCorreo.getText().toString().equals("") || txtPassword.getText().toString().equals("") || txtPassword2.getText().toString().equals("")) {
             Toast.makeText(this, "Completar campos vacios", Toast.LENGTH_SHORT).show();
+        }
+        else if(!validarEmail(txtCorreo.getText().toString())){
+            txtCorreo.setError("Inserte un Email");
+            return;
+            //Toast.makeText(this, "Inserta un Email", Toast.LENGTH_SHORT).show();
         }
         else{
             ValidarCorreo(txtCorreo.getText().toString());
